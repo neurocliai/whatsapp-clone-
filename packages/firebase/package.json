@@ -1,0 +1,15 @@
+{
+  "name": "@opero/firebase",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@opero/config": "*",
+    "@opero/types": "*",
+    "firebase": "^11.6.0"
+  }
+}

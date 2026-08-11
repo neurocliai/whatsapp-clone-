@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Opero",
+    "slug": "opero",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "opero",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.opero.enterprise"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1220"
+      },
+      "package": "com.opero.enterprise"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "opero-enterprise"
+      }
+    }
+  }
+}

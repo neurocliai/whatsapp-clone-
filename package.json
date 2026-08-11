@@ -1,0 +1,23 @@
+{
+  "name": "opero-enterprise",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Opero — Business operations Enterprise realtime platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev:landing": "npm run dev -w @opero/landing",
+    "dev:user": "npm run dev -w @opero/user",
+    "dev:admin": "npm run dev -w @opero/admin",
+    "dev:mobile": "npm run start -w @opero/mobile",
+    "dev:gateway": "npm run dev -w @opero/gateway",
+    "build": "npm run build -w @opero/landing -w @opero/user -w @opero/admin",
+    "lint": "npm run lint -w @opero/landing -w @opero/user -w @opero/admin --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
