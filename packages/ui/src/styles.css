@@ -1,0 +1,103 @@
+:root {
+  --opero-ink: #0b1220;
+  --opero-slate: #141c2b;
+  --opero-panel: #1a2436;
+  --opero-mist: #e8eef7;
+  --opero-muted: #9aa8bd;
+  --opero-teal: #1ec8a5;
+  --opero-teal-deep: #0f8f78;
+  --opero-amber: #f0a202;
+  --opero-coral: #e85d4c;
+  --opero-line: rgba(232, 238, 247, 0.12);
+  --opero-glow: rgba(30, 200, 165, 0.35);
+  --font-display: "Syne", "Avenir Next", sans-serif;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--opero-ink);
+  color: var(--opero-mist);
+  font-family: var(--font-body);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.opero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.85rem 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.opero-btn:hover {
+  transform: translateY(-1px);
+}
+
+.opero-btn-primary {
+  background: linear-gradient(135deg, var(--opero-teal), var(--opero-teal-deep));
+  color: #04110d;
+  box-shadow: 0 12px 30px var(--opero-glow);
+}
+
+.opero-btn-ghost {
+  background: transparent;
+  color: var(--opero-mist);
+  border: 1px solid var(--opero-line);
+}
+
+.opero-input {
+  width: 100%;
+  border: 1px solid var(--opero-line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--opero-mist);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  outline: none;
+}
+
+.opero-input:focus {
+  border-color: var(--opero-teal);
+  box-shadow: 0 0 0 3px rgba(30, 200, 165, 0.18);
+}
+
+.opero-panel {
+  background: linear-gradient(180deg, rgba(26, 36, 54, 0.92), rgba(20, 28, 43, 0.96));
+  border: 1px solid var(--opero-line);
+  border-radius: 22px;
+}
+
+.opero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--opero-line);
+  color: var(--opero-muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

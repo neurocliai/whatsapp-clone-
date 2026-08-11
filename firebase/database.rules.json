@@ -1,0 +1,27 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+    "presence": {
+      "$uid": {
+        ".write": "auth != null && auth.uid == $uid"
+      }
+    },
+    "channels": {
+      "$channelId": {
+        "typing": {
+          "$uid": {
+            ".write": "auth != null && auth.uid == $uid"
+          }
+        }
+      }
+    },
+    "calls": {
+      "$sessionId": {
+        "signals": {
+          ".write": "auth != null"
+        }
+      }
+    }
+  }
+}
